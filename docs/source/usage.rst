@@ -1,28 +1,20 @@
 Usage
 =====
 
-.. _installation:
+.. IS-Monitor:
 
 Installation
 ------------
 
-TEST
-.. code-block:: console
+IS-Monitor
+------------
 
-   (.venv) $ pip install lumache
+IS-4CAST
+------------
 
-INFOSEQUIA MONITOR----------------
 
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
+.. IS-4CAST:
 
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
 
 For example:
 
