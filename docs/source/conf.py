@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'InfoSequia'
+copyright = '2022, FutureWater'
+author = 'FW-Team'
 
 release = '0.1'
 version = '0.1.0'
