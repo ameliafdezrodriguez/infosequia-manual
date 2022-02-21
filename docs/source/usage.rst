@@ -1,8 +1,6 @@
 Usage
 =====
 
-.. IS-Monitor:
-
 Installation
 ------------
 
@@ -19,8 +17,6 @@ HYD
 
 IS-4CAST
 =====
-
-IS-4CAST:
 
 
 For example:
