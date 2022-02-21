@@ -6,14 +6,12 @@ Usage
 Installation
 ------------
 
-To use Lumache, first install it using pip:
-
+TEST
 .. code-block:: console
 
    (.venv) $ pip install lumache
 
-Creating recipes
-----------------
+INFOSEQUIA MONITOR----------------
 
 To retrieve a list of random ingredients,
 you can use the ``lumache.get_random_ingredients()`` function:
