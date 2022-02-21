@@ -7,13 +7,15 @@ Installation
 ------------
 
 IS-Monitor
-------------
+=====
+MET
+VH
+HYD
 
 IS-4CAST
-------------
+=====
 
-
-.. IS-4CAST:
+IS-4CAST:
 
 
 For example:
