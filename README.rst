@@ -10,3 +10,6 @@ https://docs.readthedocs.io/en/stable/tutorial/
 
 Editing in readthedocs 
 reStructuredText https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html 
+
+Documentation standards
+PEP 0287 https://www.python.org/dev/peps/pep-0287/
