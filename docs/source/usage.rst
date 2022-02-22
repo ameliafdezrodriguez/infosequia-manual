@@ -3,8 +3,11 @@ INFOSEQUIA_
 ========
 
 Version: 0.1
+
 Document_No.: IS.PUM
-(c) FutureWater
+
+.(c) FutureWater
+
 Check at https://docs.typo3.org/m/typo3/docs-how-to-document/main/en-us/GeneralConventions/CodingGuidelines.html 
 
 BAKCGROUND
