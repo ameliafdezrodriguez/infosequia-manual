@@ -9,7 +9,7 @@ INFOSEQUIA - PUBLIC USER MANUAL
 
 The latest version of this document can be found at
 <https://pum-is.readthedocs.io/en/latest/usage.html>; You can contact the author via
-e-mail at <s.contreras@futurewater.es>.
+e-mail at <s.contreras@futurewater.es>  
 
 
 BAKCGROUND
@@ -18,10 +18,8 @@ BAKCGROUND
 Executive Summary
 ------------
 
-
 Scope and Objectives
 ------------
-
 
 Content of the document
 ------------
@@ -29,6 +27,7 @@ Content of the document
 
 REVIEW OF USER REQUIREMENTS
 ============
+
 
 
 SYSTEM ARCHITECTURE
