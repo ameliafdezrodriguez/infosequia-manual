@@ -38,7 +38,7 @@ General overview
 INFOSEQUIA - MONITORING
 ============
 
-INFOSEQUIA-MET Product Suite
+IS-MET Product Suite
 ------------
 
 Lot content and general features
@@ -92,7 +92,7 @@ Quality Assurance and Validation
 #################
 
 
-INFOSEQUIA-VH Product Suite
+IS-VH Product Suite
 ------------
 
 Lot content and general features
@@ -159,7 +159,7 @@ Quality Assurance and Validation
 #################
 
 
-INFOSEQUIA-HYD Product Suite
+IS-HYD Product Suite
 ------------
 
 Lot content and general features
@@ -185,7 +185,7 @@ Quality Assurance and Validation
 #################
 
 
-INFOSEQUIA-CLI Product 
+IS-CLI Product 
 ------------
 
 Lot content and general features
