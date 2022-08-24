@@ -16,6 +16,7 @@ Contents
 --------
 
 .. toctree::
+   :caption: Contents:
 
    is-pum
 
