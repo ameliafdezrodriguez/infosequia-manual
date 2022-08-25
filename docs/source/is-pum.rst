@@ -18,7 +18,7 @@ The latest version of this document can be found at
 e-mail at <s.contreras@futurewater.es>  
 
 
-BAKCGROUND
+BACKGROUND
 ============
 
 Executive Summary
