@@ -1,3 +1,9 @@
+|image1|\ |image2|
+
+I
+
+|image3|
+
 ========
 INFOSEQUIA - PUBLIC USER MANUAL
 ========
@@ -12,7 +18,7 @@ The latest version of this document can be found at
 e-mail at <s.contreras@futurewater.es>  
 
 
-BAKCGROUND
+BACKGROUND
 ============
 
 Executive Summary
@@ -261,3 +267,26 @@ Advanced usage
 
 .. |copy|   unicode:: U+000A9 .. COPYRIGHT SIGN
 
+
+Revision history
+----------------
+
+======= ============= ===================== =========
+Version Date of Issue Amendments by         Issued to
+======= ============= ===================== =========
+0.2     25-Feb-2022   InCubed Activity team ESA
+0.3     05-Mar-2022   SC                    
+\                                           
+======= ============= ===================== =========
+
+
+.. |image1| image:: media/image1.png
+   :width: 2.87209in
+   :height: 0.62171in
+.. |image2| image:: media/image2.jpeg
+   :width: 2.975in
+   :height: 0.49236in
+.. |image3| image:: media/image3.jpeg
+   :width: 10.51181in
+   :height: 3.30625in
+   
