@@ -221,7 +221,8 @@ InfoSequia is composed of three main modules:
 
 InfoSequia relies in several software and analytical tools that are involved either for coding development and testing, cloud computing and hosting platforms, operational running of scripts, and storing, sharing and publication of outcomes. In addition, the system relies on external repositories that provide the raw EO and climate data needed for up-to-date drought and teleconnection indices.
 
-|image4|
+|Diagram
+Description automatically generated|
 
 Figure . System architecture of InfoSequia (functional block diagram)
 
@@ -247,48 +248,45 @@ SRC, is the name of the source or raw dataset (3 uppercase letters). The *[xSRC2
 
 **Box. Examples of filenames**
 
-+-------------------------------------------------------------------------------------------+
-|*chs.DK.SPI__.CHR.nc*																		|
-|																							|
-|chs = Segura River Basin project															|
-|																							|
-|DK = dekadly product (variables generated every 10-days, 3 dekads per month)				|
-|																							|
-|SPI_\_ = Standardized Precipitation Index (MET lot)										|
-|																							|
-|CHR = CHIRPS dataset																		|
-|																							|
-|*moz.MM.SPEI_.CHRxTCL.nc*																	|
-|																							|
-|moz = Mozambique project																	|
-|																							|
-|MM = monthly product (variables generated monthly)											|
-|																							|
-|SPEI\_ = Standardized Precipitation Evapotranspiration Index								|
-|																							|
-|CHRxTCL = CHIRPS dataset for the precipitation indicator, and TerraClimate					|
- for the potential evapotranspiration														|
-|																							|
-|*ink.DK.VH___.MOD.nc*																		|
-|																							|
-|moz = Inkomati River Basin project															|
-|																							|
-|DK = dekadly product																		|
-|																							|
-|VH__\_ = Vegetation Health product (it includes VCI, TCI and VHI indices, see section 3.3) |
-|																							|
-|MOD = MODIS sensor onboard Terra (datasets from collection 6.1)							|
-|                                   														|
-+-------------------------------------------------------------------------------------------+
+*chs.DK.SPI__.CHR.nc*
 
+chs = Segura River Basin project
+
+DK = dekadly product (variables generated every 10-days, 3 dekads per month)
+
+SPI_\_ = Standardized Precipitation Index (MET lot)
+
+CHR = CHIRPS dataset
+
+*moz.MM.SPEI_.CHRxTCL.nc*
+
+moz = Mozambique project
+
+MM = monthly product (variables generated monthly)
+
+SPEI\_ = Standardized Precipitation Evapotranspiration Index
+
+CHRxTCL = CHIRPS dataset for the precipitation indicator, and TerraClimate for the potential evapotranspiration
+
+*ink.DK.VH___.MOD.nc*
+
+moz = Inkomati River Basin project
+
+DK = dekadly product
+
+VH__\_ = Vegetation Health product (it includes VCI, TCI and VHI indices, see section 3.3)
+
+MOD = MODIS sensor onboard Terra (datasets from collection 6.1)
 
 Important information (metadata) describing InfoSequia products is embedded directly in the netCDF files. The metadata generation in InfoSequia has been standardized using international conventions (CF-1.8 and ACDD-1.3). A comprehensive description of each product can be retrieved through a suite of global attributes (Figure 2), and dimension attributes (longitude, latitude, time) and variable attributes (Figure 3).
 
-|image5|
+|Text, letter
+Description automatically generated|
 
-Figure 2. Global attributes reported for each InfoSequia-MONITOR product (example for the PPERC.CHR product)
+Figure . Global attributes reported for each InfoSequia-MONITOR product (example for the PPERC.CHR product)
 
-|image6|
+|Text
+Description automatically generated with medium confidence|
 
 Figure 3. Attributes for dimension (longitude, latitude, time) and variable fields (example for PPERS12, severity classes for precipitation percentile index from total precipitation aggregated at 12-months).
 
@@ -304,7 +302,7 @@ In its current version, InfoSequia provides 3 primary MET products: the *Precipi
 
 In general, each single product is generated as a netCDF file and contains a collection of dekadal (10-days) or monthly indices aggregated at 1, 3, 6 and 12-month timescales. Dekadal products are the ones used for visualization, while the monthly ones are used forecasting purposes (Figure 3).
 
-|image7|
+|image3|
 
 Figure 4. Logic workflow diagram used for the production of MET Lot products.
 
@@ -1105,40 +1103,36 @@ Quality Assurance and Validation
 .. |image7| image:: ./media/image7.png
    :width: 5.67708in
    :height: 3.13756in
-.. |image4| image:: ./media/image8.png
+.. |image8| image:: ./media/image8.png
    :width: 5.71875in
    :height: 4.01895in
-.. |image5| image:: ./media/image9.png
+.. |image9| image:: ./media/image9.png
    :width: 6.10069in
    :height: 3.48056in
-.. |image6| image:: ./media/image10.png
+.. |image10| image:: ./media/image10.png
    :width: 5.76042in
    :height: 3.33843in
-.. |A picture containing graphical user interface
-Description automatically generated| image:: ./media/image11.png
+.. |image11| image:: ./media/image11.png
    :width: 4.06957in
    :height: 2.54852in
-.. |image7| image:: ./media/image12.png
+.. |image12| image:: ./media/image12.png
    :width: 4.55208in
    :height: 3.1073in
-.. |Timeline
-Description automatically generated| image:: ./media/image13.png
+.. |image13| image:: ./media/image13.png
    :width: 5.71875in
    :height: 4.61551in
-.. |image8| image:: ./media/image14.png
+.. |image14| image:: ./media/image14.png
    :width: 5.94722in
    :height: 2.84353in
-.. |image9| image:: ./media/image15.png
+.. |image15| image:: ./media/image15.png
    :width: 6.09792in
    :height: 4.44861in
-.. |A picture containing diagram
-Description automatically generated| image:: ./media/image16.png
+.. |image16| image:: ./media/image16.png
    :width: 4.96512in
    :height: 3.93072in
-.. |image10| image:: ./media/image17.png
+.. |image17| image:: ./media/image17.png
    :width: 4.72565in
    :height: 3.96319in
-.. |Table
-Description automatically generated| image:: ./media/image18.png
+.. |image18| image:: ./media/image18.png
    :width: 2.23084in
    :height: 1.35075in
