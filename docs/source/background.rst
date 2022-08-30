@@ -93,9 +93,8 @@ Key Performance Indicators
 The quality of the seasonal forecasts of InfoSequia is evaluated according its capability to address the needs and technical gaps identified by users. Definition and quantification of these needs are continuously evaluated through specific surveys and/or regular meetings with target user segments, including river basin authorities and humanitarian NGO’s. These needs are translated into several target KPIs and metrics which refer to aspects as geographical scale, forecasting lead time(s), update frequency, latency, reliability and access to the system outcomes (Table 2).
 
 Table . KPIs used for InfoSequia forecast products
-.. list-table:: Comparison
 
-   :class: tight-table
+
 +----------------------+----------------------+----------------------+
 | **Requirement        | **User req.          | **Description of     |
 | Description**        | indicated**          | criticality**        |
