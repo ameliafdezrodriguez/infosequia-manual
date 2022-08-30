@@ -105,6 +105,6 @@ Table 1 . KPIs used for InfoSequia forecast products
 .. |image2| image:: ./media/image2.jpg
    :width: 10.51181in
    :height: 3.31875in
-.. |table1| image:: ./media/table1.png
+.. |table1| image:: ./media/table1.PNG
    :width: 2.975in
    :height: 0.49236in
