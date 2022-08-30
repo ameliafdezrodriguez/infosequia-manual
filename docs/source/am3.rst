@@ -1,24 +1,6 @@
 |image1|
 
-|image2|
-
 InfoSequia – Public User Manual
-
-**Client**
-
-XXX
-
-**Authors**
-
-Name 1 – Function (Email address)
-
-Name 2 – Function (Email address)
-
-**Date**
-
-2022-08-24
-
-Web address
 
 BACKGROUND
 ==========
@@ -221,10 +203,9 @@ InfoSequia is composed of three main modules:
 
 InfoSequia relies in several software and analytical tools that are involved either for coding development and testing, cloud computing and hosting platforms, operational running of scripts, and storing, sharing and publication of outcomes. In addition, the system relies on external repositories that provide the raw EO and climate data needed for up-to-date drought and teleconnection indices.
 
-|Diagram
-Description automatically generated|
+|image4|
 
-Figure . System architecture of InfoSequia (functional block diagram)
+Figure 1. System architecture of InfoSequia (functional block diagram)
 
 INFOSEQUIA-MONITOR 
 ==================
@@ -280,13 +261,11 @@ MOD = MODIS sensor onboard Terra (datasets from collection 6.1)
 
 Important information (metadata) describing InfoSequia products is embedded directly in the netCDF files. The metadata generation in InfoSequia has been standardized using international conventions (CF-1.8 and ACDD-1.3). A comprehensive description of each product can be retrieved through a suite of global attributes (Figure 2), and dimension attributes (longitude, latitude, time) and variable attributes (Figure 3).
 
-|Text, letter
-Description automatically generated|
+|image5|
 
-Figure . Global attributes reported for each InfoSequia-MONITOR product (example for the PPERC.CHR product)
+Figure 2 . Global attributes reported for each InfoSequia-MONITOR product (example for the PPERC.CHR product)
 
-|Text
-Description automatically generated with medium confidence|
+|image6|
 
 Figure 3. Attributes for dimension (longitude, latitude, time) and variable fields (example for PPERS12, severity classes for precipitation percentile index from total precipitation aggregated at 12-months).
 
@@ -302,7 +281,7 @@ In its current version, InfoSequia provides 3 primary MET products: the *Precipi
 
 In general, each single product is generated as a netCDF file and contains a collection of dekadal (10-days) or monthly indices aggregated at 1, 3, 6 and 12-month timescales. Dekadal products are the ones used for visualization, while the monthly ones are used forecasting purposes (Figure 3).
 
-|image3|
+|image7|
 
 Figure 4. Logic workflow diagram used for the production of MET Lot products.
 
@@ -434,7 +413,7 @@ In its current version, InfoSequia provides 2 primary VH products: the *Vegetati
 
 As with MET products, VH products are delivered in netCDF files with contain a suite of indices computed at dekadal (10-days) or monthly resolutions, and aggregated at 1, 3, 6 and 12-month timescales. Dekadal products are the ones used for visualization, while the monthly ones are used forecasting purposes (Figure 5).
 
-|image4|
+|image8|
 
 Figure 5. Logic workflow diagram used for the production of VH Lot products.
 
@@ -528,13 +507,13 @@ Pre-processing of raw-native precursors in InfoSequia consists of:
 
 The general logic workflows for the pre-processing of optical imagery and retrieval of denoised NDVI product, and LST product are shown in Figure 6 and Figure 7.
 
-|image5|
+|image9|
 
-Figure . Logic workflow for generation of denoised NDVI products.
+Figure 6. Logic workflow for generation of denoised NDVI products.
 
-|image6|
+|image10|
 
-Figure . Logic workflow for generation of sharpened LST products.
+Figure 7. Logic workflow for generation of sharpened LST products.
 
 NDVI denoising 
 ^^^^^^^^^^^^^^
@@ -551,8 +530,7 @@ Finally, in a third step, a Savitzky-Golay filtering is applied over the upper-s
 
 In total, three input parameters are required to run the InfoSequia denoising algorithm: a) the *cutoff_scaling factor*, b) the time *window_size*, and c) the *polynomial_degree* used during the Savitzky-Golay filtering. All these parameters have been fixed at 1.5, 5, and 3, respectively. The impact of the denoising procedure applied over a NDVI timeseries for a particular pixel is illustrated in Figure 5
 
-|A picture containing graphical user interface
-Description automatically generated|
+|image11|
 
 Figure 8. Application of the InfoSequia denoising algorithm over a NDVI timeseries.
 
@@ -578,9 +556,9 @@ The Python code, pyDMS, is available at Github via `https://github.com/radosuav/
 
 InfoSequia applies pyDMS by setting a particular moving spatial-window size, in which pixel homogeneity is determined and based on a certain threshold.
 
-|image7|
+|image12|
 
-Figure . Data Mining Sharpener operation workflow.
+Figure 9. Data Mining Sharpener operation workflow.
 
 VH product suite 
 ~~~~~~~~~~~~~~~~
@@ -656,10 +634,9 @@ Lot content
 
 This lot is composed by those products which include the precursors or indices used to monitor the hydrological drought of a region. In its current version, InfoSequia includes two satellite-based products: 1) the total water storage in reservoirs (WSTOR, see Figure 10), and 2) the groundwater storage anomaly (GWSA) derived from Earth gravimetry measurements. Additional hydrological drought indices based on real or simulated streamflow data are being included in further upgrades.
 
-|Timeline
-Description automatically generated|
+|image13|
 
-Figure . Logic workflow for the generation of the WSTOR indicator.
+Figure 10. Logic workflow for the generation of the WSTOR indicator.
 
 In absence of ground-based streamflow observations, InfoSequia will ingest river discharge reanalysis data from the European Flood Awareness System. Two operational products are already available: GloFAS which provides monthly estimates at the global scale at a spatial resolution of 10km, and EFAS that is a sub-daily product generated at the European continental scale at a spatial resolution of 5 km.
 
@@ -857,7 +834,7 @@ Table . Teleconnection indices collected by the InfoSequia system.
 |          |          | WTIO)    |          |          |          |
 +----------+----------+----------+----------+----------+----------+
 
-|image8|
+|image14|
 
 Figure 11. Logic workflow for the generation of climate and AO indices.
 
@@ -911,9 +888,9 @@ Pre-processing and preparation of input data
 
 The 4CAST processor of InfoSequia ingests datasets from the InfoSequia-MONITOR (predictors) and auxiliary or external sources (predictors). The ing4CAST algorithm is “heterogeneous data ingestion pattern” algorithm which enables the preparation of the data inputs according to the format requirements required by the 4CAST processor (Figure 2). The algorithm extracts and combines absolute values of a predictand metric(s) (observations or indicators of impact in absolute ) from an external file or dataset, and all the suite of predictors generated by the InfoSequia-MONITOR component.
 
-|image9|
+|image15|
 
-Figure . Logic workflow of the ing4CAST algorithm inside the IS-4CAST module. The predictand datasets and Land Use/Land Cover maps are generated or collected from external sources. Predictors are taken from the InfoSequia-MONITOR module. The Water Requirement Satisfaction Index (WRSI) or the Water Supply Stress Index (WSSI) are examples of impact-based indicators used in InfoSequia for forecasting crop yield or water supply failures, respectively
+Figure 12. Logic workflow of the ing4CAST algorithm inside the IS-4CAST module. The predictand datasets and Land Use/Land Cover maps are generated or collected from external sources. Predictors are taken from the InfoSequia-MONITOR module. The Water Requirement Satisfaction Index (WRSI) or the Water Supply Stress Index (WSSI) are examples of impact-based indicators used in InfoSequia for forecasting crop yield or water supply failures, respectively
 
 4CAST product
 -------------
@@ -994,17 +971,16 @@ Box 1. Phases in a FFT model
 | The overall testing procedure is explained in detail in the Action   |
 | Plan for Developing and Testing report.                              |
 |                                                                      |
-| |A picture containing diagram                                        |
-| Description automatically generated|                                 |
+| |image16|                                                            |
 |                                                                      |
 | Figure B1. Phases in a FFT model                                     |
 +----------------------------------------------------------------------+
 
 By following the required steps typical of FFT models, the backbone of 4CAST processor is composed of two main items (Figure 3): (1) the configuration file, in which the user and model setting parameters are explicitly declared to guide the forecasting process, and (2) the core processor which runs the steps of the FFT process, including the preparation the input data (definition of failures), the tuning, training and validation of the model, the retrieval of performance metrics, and the generation of historical outlooks or operational forecasts of probability of failure.
 
-   |image10|
+   |image17|
 
-Figure 5. Detailed overview of main sections and functionalities of the 4CAST processor.
+Figure 13. Detailed overview of main sections and functionalities of the 4CAST processor.
 
 Performance metrics
 ~~~~~~~~~~~~~~~~~~~
@@ -1015,8 +991,7 @@ The first level of analysis applies on the training-validation sample and enable
 
 Table 8.Contigency table with failure/no failure number of cases for the observed (actual observations of impact) and simulated (model-based) datasets. The number of True Positive (TP) or hits, False Negative (FN) or misses, False Positive (FP) or false alarms, and True Negative (TN) or correct rejections are reported.
 
-|Table
-Description automatically generated|
+|image18|
 
 Table 9. Performance metrics used during the training/validation phase.
 
