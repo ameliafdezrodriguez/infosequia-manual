@@ -15,8 +15,4 @@ Contents
 
 .. toctree::
 
-   background.rst
-   
-   system_architecture.rst
-
    am3.rst
