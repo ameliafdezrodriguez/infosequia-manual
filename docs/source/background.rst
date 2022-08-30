@@ -92,10 +92,101 @@ Key Performance Indicators
 
 The quality of the seasonal forecasts of InfoSequia is evaluated according its capability to address the needs and technical gaps identified by users. Definition and quantification of these needs are continuously evaluated through specific surveys and/or regular meetings with target user segments, including river basin authorities and humanitarian NGO’s. These needs are translated into several target KPIs and metrics which refer to aspects as geographical scale, forecasting lead time(s), update frequency, latency, reliability and access to the system outcomes (Table 2).
 
-Table 1 . KPIs used for InfoSequia forecast products
+.. table::  1 . KPIs used for InfoSequia forecast products
 
 
-|table1|
+	+----------------------+----------------------+----------------------+
+	| **Requirement        | **User req.          | **Description of     |
+	| Description**        | indicated**          | criticality**        |
+	+----------------------+----------------------+----------------------+
+	| **Lead time**        | Flexible: 2-6 months | It is the length of  |
+	|                      | ahead                | time between the     |
+	|                      |                      | issuance of a        |
+	|                      |                      | forecast and the     |
+	|                      |                      | occurrence of the    |
+	|                      |                      | phenomenon that is   |
+	|                      |                      | predicted.           |
+	+----------------------+----------------------+----------------------+
+	| **Spatial context**  | Sub-basin            | Spatial units with a |
+	|                      |                      | large and clear      |
+	| (water management)   | River basin          | water supply-demand  |
+	|                      |                      | system: sub-basins   |
+	|                      |                      | and river basins     |
+	+----------------------+----------------------+----------------------+
+	| **Spatial context**  | District             | Spatial units with   |
+	|                      |                      | homogeneous climate  |
+	| (food security)      |                      | forcings and         |
+	|                      |                      | cropping systems,    |
+	|                      |                      | fitting the area of  |
+	|                      |                      | interest of the end  |
+	|                      |                      | user                 |
+	+----------------------+----------------------+----------------------+
+	| **Update frequency** | Monthly              | The update frequency |
+	| **(refresh rate)**   |                      | should be in line    |
+	|                      |                      | with time scales     |
+	|                      |                      | associated with      |
+	|                      |                      | relevant             |
+	|                      |                      | agro-/hydro-         |
+	|                      |                      | climatological       |
+	|                      |                      | processes and end    |
+	|                      |                      | users’ opportunities |
+	|                      |                      | to act               |
+	+----------------------+----------------------+----------------------+
+	| **Latency            | Max. 3 days          | This is the time     |
+	| (timeliness)**       |                      | delay between the    |
+	|                      |                      | date at which an     |
+	|                      |                      | observation is taken |
+	|                      |                      | and the date when    |
+	|                      |                      | the alert is         |
+	|                      |                      | provided to the      |
+	|                      |                      | end-user             |
+	+----------------------+----------------------+----------------------+
+	| **Reliability**      | Varying from a       | The ability to       |
+	|                      | balanced probability | detect hits (true    |
+	|                      | for drought          | positives) and       |
+	|                      | detection and false  | correct rejections   |
+	|                      | alarm (50%-60%), to  | (true negatives). In |
+	|                      | a high probability   | this case, accuracy  |
+	|                      | of drought detection | is defined as a      |
+	|                      | at the expense of    | balance between      |
+	|                      | false alarms (>80%). | sensitivity (hit     |
+	|                      |                      | rate) and            |
+	|                      |                      | specificity (correct |
+	|                      |                      | rejection rate).     |
+	|                      |                      | This balance should  |
+	|                      |                      | be mutable according |
+	|                      |                      | to user needs, with  |
+	|                      |                      | some applications    |
+	|                      |                      | requiring high       |
+	|                      |                      | sensitivity (where   |
+	|                      |                      | costs of impact are  |
+	|                      |                      | high and cost of     |
+	|                      |                      | action is low) and   |
+	|                      |                      | others high          |
+	|                      |                      | specificity (where   |
+	|                      |                      | costs of action are  |
+	|                      |                      | high).               |
+	+----------------------+----------------------+----------------------+
+	| **Auxiliary          | - Predictors used    | Additional           |
+	| information**        | for forecasting      | information          |
+	|                      |                      | delivered with the   |
+	|                      | - Metrics of         | InfoSequia(-4CAST)   |
+	|                      | forecast uncertainty | information to aid   |
+	|                      |                      | end users in its     |
+	|                      |                      | interpretation       |
+	+----------------------+----------------------+----------------------+
+	| **Access to          | Pushed alerts        | System ability to    |
+	| InfoSequia           |                      | send out timely,     |
+	| information          |                      | pushed methods in    |
+	| (alerts)**           |                      | case certain         |
+	|                      |                      | threshold values are |
+	|                      |                      | exceeded             |
+	+----------------------+----------------------+----------------------+
+	| **Access to          | - Cloud repository   | Required modalities  |
+	| InfoSequia           |                      | for data sharing     |
+	| information**        | - Website / portal   | (on-demand access)   |
+	|                      | with GUI             |                      |
+	+----------------------+----------------------+----------------------+
 
 
 
@@ -108,3 +199,7 @@ Table 1 . KPIs used for InfoSequia forecast products
 .. |table1| image:: ./media/table1.PNG
    :width: 2.975in
    :height: 0.49236in
+
+
+
+
