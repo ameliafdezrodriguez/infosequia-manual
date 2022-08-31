@@ -474,6 +474,8 @@ c) Copernicus Open Access Hub
 The MOD09GQ product provides daily georectified and atmospherically corrected estimates of 250m surface reflectance in the Red (R) and the Near InfraRed (NIR) bands measured by the Moderate Resolution Imaging Spectroradiometer sensor (MODIS) mounted onboard of the Terra satellite. The dataset offers a long temporal coverage, spanning from Feb-2000 onwards. Each band is linked with a Quality Assurance layer that is used in InfoSequia for a pixel-by-pixel cloud-masking and quality control. Qualified “Top of Canopy” surface reflectances, are then used for computing the NDVI as:
 
 .. math:: NDVI = \frac{\left( NIR - R \right)}{\left( NIR + R \right)}
+    :align: center
+
 
 Daily NDVI are composited and denoised, and the resulting gridded dataset is finally used for computing the VCI and CVIA indices
 
@@ -571,19 +573,19 @@ The VH method in InfoSequia computes three indices:
 
 .. math:: VCI = \frac{\left( NDVI - \text{NDVI}_{\min} \right)}{\left( \text{NDVI}_{\max} - \text{NDVI}_{\min} \right)}*100
 
-   VCI has to be computed using NDVI-denoised values (see Annex 4) because the method is very much sensitive to the presence of spikes and outliers in climatology period. Alternatively, a percentile-based approach can be adopted for the selection of the endmembers in the NDVI record. The VCI ranges between 0 (worst unhealthy vegetation) to 100 (best healthy vegetation). When negative values (NDVI<NDVI\ :sub:`min`), or higher than 100 (NDVI>NDVI\ :sub:`max`) are found, then these are flatted to 0 and 100, respectively.
+VCI has to be computed using NDVI-denoised values (see Annex 4) because the method is very much sensitive to the presence of spikes and outliers in climatology period. Alternatively, a percentile-based approach can be adopted for the selection of the endmembers in the NDVI record. The VCI ranges between 0 (worst unhealthy vegetation) to 100 (best healthy vegetation). When negative values (NDVI<NDVI\ :sub:`min`), or higher than 100 (NDVI>NDVI\ :sub:`max`) are found, then these are flatted to 0 and 100, respectively.
 
 -  *Temperature Condition Index* (TCI). This follows a similar logic than the used for VCI but using LST values as a proxy of the impact that thermal and heat conditions have on the vegetation health and development. Similar cautions than for the VCI must be taken. It is computed as:
 
 .. math:: LST = \frac{\left( \text{LST}_{\max} - LST \right)}{\left( \text{LST}_{\max} - \text{LST}_{\min} \right)}*100
 
-   TCI values range between 0 (most thermal-stressed and unhealthy vegetation condition) and 100 (most thermal-stressed and unhealthy vegetation condition). Similarly, to VCI, values that fall outside this range are accordingly flatted.
+TCI values range between 0 (most thermal-stressed and unhealthy vegetation condition) and 100 (most thermal-stressed and unhealthy vegetation condition). Similarly, to VCI, values that fall outside this range are accordingly flatted.
 
 -  *Vegetation Health Index* (VHI). It combines VCI and TCI indices to integrate in the same index the effect the moisture and thermal/heat effects on vegetation. The integration is usually done by applying a weighted-averaged linear approach in which the weight parameter recognizes the different role that these weather forcings have in a particular environment. VHI is computed as:
 
 .. math:: VHI = w*VCI + \left( 1 - w \right)*TCI
 
-   where *w* is the weight parameter whose value depends on the aridity conditions of a particular region (Bento et al., 2018). In InfoSequia, a 0.5 value for *w* has been adopted.
+where *w* is the weight parameter whose value depends on the aridity conditions of a particular region (Bento et al., 2018). In InfoSequia, a 0.5 value for *w* has been adopted.
 
 All the VH indices in InfoSequia are computed over dekadly and monthly composites of NDVI and LST, and at 1, 3, 6 and 12-month timescale aggregations. Similar to meteorological drought indices, VH indices are categorized into four classes using fixed values.
 
