@@ -1107,4 +1107,3 @@ Quality Assurance and Validation
 .. |image18| image:: ./media/image18.png
    :width: 4.46in
    :height: 2.70in
-   :align:center
