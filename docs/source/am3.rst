@@ -223,36 +223,37 @@ PPPPP, is the product name (5 uppercase letters, or underscores “_”)
 SRC, is the name of the source or raw dataset (3 uppercase letters). The *[xSRC2]* only applies when two different sources or raw datasets are involved in the generation of the product.
 
 **Box. Examples of filenames**
-
-*chs.DK.SPI__.CHR.nc*
-
-chs = Segura River Basin project
-
-DK = dekadly product (variables generated every 10-days, 3 dekads per month)
-
-SPI_\_ = Standardized Precipitation Index (MET lot)
-
-CHR = CHIRPS dataset
-
-*moz.MM.SPEI_.CHRxTCL.nc*
-
-moz = Mozambique project
-
-MM = monthly product (variables generated monthly)
-
-SPEI\_ = Standardized Precipitation Evapotranspiration Index
-
-CHRxTCL = CHIRPS dataset for the precipitation indicator, and TerraClimate for the potential evapotranspiration
-
-*ink.DK.VH___.MOD.nc*
-
-moz = Inkomati River Basin project
-
-DK = dekadly product
-
-VH__\_ = Vegetation Health product (it includes VCI, TCI and VHI indices, see section 3.3)
-
-MOD = MODIS sensor onboard Terra (datasets from collection 6.1)
++-----------------------------------------------------------------------------------------------------------------+
+| *chs.DK.SPI__.CHR.nc*                                                                                           |
+|                                                                                                                 |
+| chs = Segura River Basin project                                                                                |
+|                                                                                                                 |
+| DK = dekadly product (variables generated every 10-days, 3 dekads per month)                                    |
+|                                                                                                                 |
+| SPI_\_ = Standardized Precipitation Index (MET lot)                                                             |
+|                                                                                                                 |
+| CHR = CHIRPS dataset                                                                                            |
+|                                                                                                                 |
+| *moz.MM.SPEI_.CHRxTCL.nc*                                                                                       |
+|                                                                                                                 |
+| moz = Mozambique project                                                                                        |
+|                                                                                                                 |
+| MM = monthly product (variables generated monthly)                                                              |
+|                                                                                                                 |
+| SPEI\_ = Standardized Precipitation Evapotranspiration Index                                                    |
+|                                                                                                                 |
+| CHRxTCL = CHIRPS dataset for the precipitation indicator, and TerraClimate for the potential evapotranspiration |
+|                                                                                                                 |
+| *ink.DK.VH___.MOD.nc*                                                                                           |
+|                                                                                                                 |
+| moz = Inkomati River Basin project                                                                              |
+|                                                                                                                 |
+| DK = dekadly product                                                                                            |
+|                                                                                                                 |
+| VH__\_ = Vegetation Health product (it includes VCI, TCI and VHI indices, see section 3.3)                      |
+|                                                                                                                 |
+| MOD = MODIS sensor onboard Terra (datasets from collection 6.1)                                                 |
++-----------------------------------------------------------------------------------------------------------------+
 
 Important information (metadata) describing InfoSequia products is embedded directly in the netCDF files. The metadata generation in InfoSequia has been standardized using international conventions (CF-1.8 and ACDD-1.3). A comprehensive description of each product can be retrieved through a suite of global attributes (Figure 2), and dimension attributes (longitude, latitude, time) and variable attributes (Figure 3).
 
