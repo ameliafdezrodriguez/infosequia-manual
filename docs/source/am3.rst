@@ -1,5 +1,3 @@
-InfoSequia – Public User Manual
-
 BACKGROUND
 ==========
 
