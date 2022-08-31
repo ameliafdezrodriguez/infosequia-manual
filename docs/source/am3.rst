@@ -212,7 +212,7 @@ Naming convention & Metadata
 
 IS-MONITOR products are delivered in netCDF format. The file naming convention is identified by the sequence of fields described here:
 
-*PRJ\ *\ **.**\ *\ TR\ *\ **.**\ *\ PPPPP\ *\ **.**\ *\ SRC[xSRC2]\ *\ **.**\ *\ nc*
+*PRJ.TR.PPPPP\.SRC[xSRC2].nc*
 
 PRJ, is the acronym (3 lowercase letters) of the project or geographical region of interest.
 
