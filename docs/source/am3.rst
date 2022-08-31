@@ -640,7 +640,7 @@ Algorithm description
 
 The total of water stored in medium- and large-size reservoirs is of critical importance to evaluate the risks of water stress in a water resource system. InfoSequia aims to quantify this key variable using the Normalized Difference Water Index (NDWI) retrieved from optical-shortwave imagery at high spatial resolution and adopting a local thresholding method.
 
-The NDWI has been taken as an indicator of water coverage due to its proven suitability to detect water in the land. To avoid the potential impact of water/land edge effects and clouds, InfoSequia composites the NDWI at the monthly scale using the minimum-composite-value, and extracts the resulting pixels located inside the areal boundaries of each artificial reservoir in a region of interest. The total area masked as surface water (*WAREA*) at monthly scale is computed at each reservoir by applying a threshold value, and then translated into a water volume value (*WSTOR*) by applying a reservoir-specific relationship derived by calibrating against actual observations of water storage. For estimating the surface water masks and total area in recent years (since 2015 onwards), InfoSequia uses the Sentinel-2 MSIL2A (Level-2A) product which contains orthorectified atmospherically corrected (BOA [4]_) surface reflectances for 13 optical bands with a resolution that range from the 10m to 60m. It also includes binary cloud-mask layer that qualifies those pixels covered by clouds. 20m bands B8A (NIR, labelled as red edge 4 band), B11 (SWIR 1), and QA60 (cloud mask) are specifically extracted from the dataset for InfoSequia. The product is available through Google Earth Engine repository. InfoSequia will use the collection of Landsat imagery to cope with the 1980-2015 period not covered by Sentinel-2.
+The NDWI has been taken as an indicator of water coverage due to its proven suitability to detect water in the land. To avoid the potential impact of water/land edge effects and clouds, InfoSequia composites the NDWI at the monthly scale using the minimum-composite-value, and extracts the resulting pixels located inside the areal boundaries of each artificial reservoir in a region of interest. The total area masked as surface water (*WAREA*) at monthly scale is computed at each reservoir by applying a threshold value, and then translated into a water volume value (*WSTOR*) by applying a reservoir-specific relationship derived by calibrating against actual observations of water storage. For estimating the surface water masks and total area in recent years (since 2015 onwards), InfoSequia uses the Sentinel-2 MSIL2A (Level-2A) product which contains orthorectified atmospherically corrected (BOA [2]_) surface reflectances for 13 optical bands with a resolution that range from the 10m to 60m. It also includes binary cloud-mask layer that qualifies those pixels covered by clouds. 20m bands B8A (NIR, labelled as red edge 4 band), B11 (SWIR 1), and QA60 (cloud mask) are specifically extracted from the dataset for InfoSequia. The product is available through Google Earth Engine repository. InfoSequia will use the collection of Landsat imagery to cope with the 1980-2015 period not covered by Sentinel-2.
 
 The general workflow which applies to Sentinel-2 is as follows:
 
@@ -970,10 +970,6 @@ Quality Assurance and Validation
    Abatzoglou, J.T., et al., 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data 5:170191, doi:10.1038/sdata.2017.191
 
 .. [2]
-
-.. [3]
-
-.. [4]
    Bottom Of Atmosphere
 
 .. _`https://github.com/radosuav/pyDMS`: https://github.com/radosuav/pyDMSM
