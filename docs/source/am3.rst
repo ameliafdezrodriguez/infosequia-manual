@@ -490,7 +490,7 @@ NDVI denoising
 
 Characterization of vegetation phenology and dynamics by using pixel-based NDVI timeseries is usually hindered by noise arising from unfavorable atmospheric conditions, and sun-sensor-surface viewing geometries which usually creates spurious drops in NDVI. Several strategies have been described in literature to remove spikes, reduce noise, and smooth timeseries of NDVI [2]_. InfoSequia system adopts a 3-step denoising approach which consists of an outlier removal process, a double-median smoothing, and low-pass Savitzky-Golay filtering. The general procedure aims to simulate the adaptive Savitzky-
 
-Golay filtering process implemented in TIMESAT [3]_, and is applied over the timeseries of raw NDVI generated from the MODIS and SE3 datasets.
+Golay filtering process implemented in TIMESAT, and is applied over the timeseries of raw NDVI generated from the MODIS and SE3 datasets.
 
 The first step of the denoising technique consists in the removal of outliers, defined here as those observed NDVI values that deviates, by a certain cutoff threshold, from the mean value observed in an rolling end-tailed window which size is set up by the user. The cutoff threshold is defined as the standard deviation of NDVI in an end-tailed rolling time window, scaled by a constant factor (*cutoff_scaling factor*). The size of the rolling time window (*window_size*) is a fix value which cover a certain number of dekad NDVI values. When an outlier is detected, the algorithm replaces the original value by a nodata value.
 
