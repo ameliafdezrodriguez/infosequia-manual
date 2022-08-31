@@ -1,5 +1,3 @@
-|image1|
-
 InfoSequia – Public User Manual
 
 BACKGROUND
@@ -36,9 +34,7 @@ Despite its proven usefulness and effectiveness as key tools for drought managem
 
 Technological barriers make difficult to reach enough specificity and reliability to map and early detect local patterns of drought hazard and risk. Sometimes these barriers, which inhibit the development of more local-oriented and user-tailored DEWS, are related with the lack of: 1) -computing- capabilities to deal with increasingly demanding needs of higher spatial resolutions, temporal updating frequencies, or accuracy and reliability metrics, 2) ground observations of drought impact required to validate EO- and model-based indicators, or to train and test forecasting models, or 3) specific standards for the development, maintenance and qualification of climate services is also.
 
-Key PE
-
-Institutional and social barriers rest on the not enough trustiness on DEWS due to: 1) lack of understandable and transparent indicators of warning/alert, or difficulty to reach those indicators through intuitive and interactive platforms able to simplify the access, sharing and communication of relevant data, 2) the permanent feeling of being in a permanent status of alert which strongly reduce the trustreliability of the forecast.
+Institutional and social barriers rest on the not enough trustiness on DEWS due to: 1) lack of understandable and transparent indicators of warning/alert, or difficulty to reach those indicators through intuitive and interactive platforms able to simplify the access, sharing and communication of relevant data, 2) the permanent feeling of being in a permanent status of alert which strongly reduces the trustness of the forecast.
 
 InfoSequia aims to break down these barriers and fit the needs by:
 

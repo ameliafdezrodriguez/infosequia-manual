@@ -1,4 +1,7 @@
-Welcome to InfoSequia's documentation!
+.. image:: ./media/infoSequia_logo_by_EN-transparent.png
+    :align: right
+	
+InfoSequia User Manual
 ===================================
 
 .. note::
