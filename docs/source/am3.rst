@@ -966,11 +966,9 @@ Quality Assurance and Validation
 
 (under development)
 
-.. [1]
-   Abatzoglou, J.T., et al., 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data 5:170191, doi:10.1038/sdata.2017.191
+.. [1] Abatzoglou, J.T., et al., 2018, Terraclimate, a high-resolution global dataset of monthly climate and climatic water balance from 1958-2015, Scientific Data 5:170191, doi:10.1038/sdata.2017.191
 
-.. [2]
-   Bottom Of Atmosphere
+.. [2] Bottom Of Atmosphere
 
 .. _`https://github.com/radosuav/pyDMS`: https://github.com/radosuav/pyDMSM
 .. _KNMI: https://climexp.knmi.nl/selectindex.cgi
