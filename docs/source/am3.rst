@@ -214,13 +214,13 @@ IS-MONITOR products are delivered in netCDF format. The file naming convention i
 
 *PRJ.TR.PPPPP\.SRC[xSRC2].nc*
 
-PRJ, is the acronym (3 lowercase letters) of the project or geographical region of interest.
+- PRJ, is the acronym (3 lowercase letters) of the project or geographical region of interest.
 
-TR, is the temporal resolution of the product (DK for dekad-based, MM for monthly)
+- TR, is the temporal resolution of the product (DK for dekad-based, MM for monthly)
 
-PPPPP, is the product name (5 uppercase letters, or underscores “_”)
+- PPPPP, is the product name (5 uppercase letters, or underscores “_”)
 
-SRC, is the name of the source or raw dataset (3 uppercase letters). The *[xSRC2]* only applies when two different sources or raw datasets are involved in the generation of the product.
+- SRC, is the name of the source or raw dataset (3 uppercase letters). The *[xSRC2]* only applies when two different sources or raw datasets are involved in the generation of the product.
 
 **Box. Examples of filenames**
 
@@ -289,32 +289,21 @@ Raw datasets of PRCP and PET are used by InfoSequia for the generation of PPERC,
 
 Table . Main properties of datasets used in InfoSequia MET Lot. SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness. All datasets are monthly updated.
 
-+-------+-------+-------+-------+------+-------+-------+-------+
-| S     | Dr    | A     | SRES  | TRES | SCOV  | TCOV  | TLIN  |
-| ource | ought | ccess |       |      |       |       | (mo   |
-|       | indi  |       |       |      |       |       | nths) |
-|       | cator |       |       |      |       |       |       |
-+=======+=======+=======+=======+======+=======+=======+=======+
-| C     | PRCP  | GEE   | 0.05  | DD   | Qu    | Since | 1     |
-| HIRPS |       |       | deg.  |      | asi-g | Jan   |       |
-|       |       |       | (~5.5 |      | lobal | -1981 |       |
-|       |       |       | km)   |      | (50ºN |       |       |
-|       |       |       |       |      | – 50º |       |       |
-|       |       |       |       |      | S)    |       |       |
-+-------+-------+-------+-------+------+-------+-------+-------+
-| ERA5  | prcp, | GEE   | 0.1   | HH   | G     | Since | 2-3   |
-| -Land | pet   |       | deg.  |      | lobal | Jan   |       |
-|       |       |       | (~11  |      |       | -1981 |       |
-|       |       |       | km)   |      |       |       |       |
-+-------+-------+-------+-------+------+-------+-------+-------+
-| Terra | pet   | GEE   | 1/24\ | MM   | G     | From  | -     |
-| Cl    |       |       |  :sup |      | lobal | Jan   |       |
-| imate |       |       | :`th` |      |       | -1958 |       |
-|       |       |       | deg.  |      |       | to    |       |
-|       |       |       |       |      |       | Dec   |       |
-|       |       |       | (~4.5 |      |       | -2020 |       |
-|       |       |       | km)   |      |       |       |       |
-+-------+-------+-------+-------+------+-------+-------+-------+
++---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
+|               |                      |           |                        |         |                                |                              |                  |
+| Source        | Drought indicator    | Access    | SRES                   | TRES    | SCOV                           | TCOV                         | TLIN (months)    |
++===============+======================+===========+========================+=========+================================+==============================+==================+
+|               |                      |           |                        |         |                                |                              |                  |
+| CHIRPS        | PRCP                 | GEE       | 0.05 deg. (~5.5 km)    | DD      | Quasi-global (50ºN – 50º S)    | Since Jan-1981               | 1                |
++---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
+|               |                      |           |                        |         |                                |                              |                  |
+| ERA5-Land     | prcp, pet            | GEE       | 0.1 deg. (~11 km)      | HH      | Global                         | Since Jan-1981               | 2-3              |
++---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
+|               |                      |           |                        |         |                                |                              |                  |
+| Terra         | pet                  | GEE       | 1/24th deg.            | MM      | Global                         | From Jan-1958 to Dec-2020    | -                |
+|    Climate    |                      |           |                        |         |                                |                              |                  |
+|               |                      |           | (~4.5 km)              |         |                                |                              |                  |
++---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
 
 -  CHIRPS
 
@@ -425,45 +414,28 @@ Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, an
 
 Table . Main properties of the native daily datasets used in InfoSequia VH Lot. NDVI = Normalized Difference Vegetation Index, LST = Land Surface Temperature, SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness.
 
-+-------+-------+-------+------+-------+-------+-------+-------+
-| Dr    | Pr    | A     | SRES | TRES  | SCOV  | TCOV  | TLIN  |
-| ought | oduct | ccess |      |       |       |       |       |
-| prec  | da    |       |      |       |       |       |       |
-| ursor | taset |       |      |       |       |       |       |
-|       | (Se   |       |      |       |       |       |       |
-|       | nsor- |       |      |       |       |       |       |
-|       | Satel |       |      |       |       |       |       |
-|       | lite) |       |      |       |       |       |       |
-+=======+=======+=======+======+=======+=======+=======+=======+
-| NDVI  | MO    | GEE   | 250m | Daily | G     | Since | <5    |
-| \ :su | D09GQ | \ :su |      |       | lobal | Feb   | days  |
-| p:`a` |       | p:`b` |      |       |       | -2000 |       |
-|       | (MO   |       |      |       |       |       |       |
-|       | DIS-T |       |      |       |       |       |       |
-|       | erra) |       |      |       |       |       |       |
-+-------+-------+-------+------+-------+-------+-------+-------+
-|       | OL_   | COAH  | 300m | Daily | G     | Since | <5    |
-|       | 2_LFR | \ :su |      |       | lobal | Dec   | days  |
-|       |       | p:`c` |      |       |       | -2017 |       |
-|       | (O    |       |      |       |       |       |       |
-|       | LCI-S |       |      |       |       |       |       |
-|       | entin |       |      |       |       |       |       |
-|       | el-3) |       |      |       |       |       |       |
-+-------+-------+-------+------+-------+-------+-------+-------+
-| LST   | MO    | GEE   | 1km  | Daily | G     | Since | <10   |
-|       | D11A1 | \ :su |      |       | lobal | Feb   | days  |
-|       |       | p:`b` |      |       |       | -2000 |       |
-|       | (MO   |       |      |       |       |       |       |
-|       | DIS-T |       |      |       |       |       |       |
-|       | erra) |       |      |       |       |       |       |
-+-------+-------+-------+------+-------+-------+-------+-------+
-|       | SL_   | COAH  | 1 km | Daily | G     | Since | <3    |
-|       | 2_LST | \ :su |      |       | lobal | May   | days  |
-|       | (S    | p:`c` |      |       |       | -2018 |       |
-|       | LSTR- |       |      |       |       |       |       |
-|       | Senti |       |      |       |       |       |       |
-|       | nel-3 |       |      |       |       |       |       |
-+-------+-------+-------+------+-------+-------+-------+-------+
++------------------------+-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
+|                        |                                         |           |         |          |            |                    |             |
+| Drought   precursor    | Product   dataset (Sensor-Satellite)    | Access    | SRES    | TRES     | SCOV       | TCOV               | TLIN        |
++========================+=========================================+===========+=========+==========+============+====================+=============+
+|                        |                                         |           |         |          |            |                    |             |
+|                        | MOD09GQ                                 |           |         |          |            |                    |             |
+|                        |                                         | GEEb      | 250m    | Daily    | Global     | Since Feb-2000     | <5 days     |
+|                        | (MODIS-Terra)                           |           |         |          |            |                    |             |
+| NDVIa                  +-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
+|                        |                                         |           |         |          |            |                    |             |
+|                        | OL_2_LFR                                |           |         |          |            |                    |             |
+|                        |                                         | COAHc     | 300m    | Daily    | Global     | Since Dec-2017     | <5 days     |
+|                        | (OLCI-Sentinel-3)                       |           |         |          |            |                    |             |
++------------------------+-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
+|                        |                                         |           |         |          |            |                    |             |
+|                        | MOD11A1                                 |           |         |          |            |                    |             |
+|                        |                                         | GEEb      | 1km     | Daily    | Global     | Since Feb-2000     | <10 days    |
+| LST                    | (MODIS-Terra)                           |           |         |          |            |                    |             |
+|                        +-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
+|                        |                                         |           |         |          |            |                    |             |
+|                        | SL_2_LST (SLSTR-Sentinel-3              | COAHc     | 1 km    | Daily    | Global     | Since May-2018     | <3 days     |
++------------------------+-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
 
 a) NDVI is computed from “Top of Canopy” estimates of Red and NIR surface reflectances-
 
@@ -645,27 +617,19 @@ Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, an
 
 Table 6. Main properties of datasets used in the InfoSequia HYD Lot. NDWI = Normalized Difference Water Index, SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness;
 
-+-------+-------+-------+-------+-------+-------+-------+-------+
-| Dr    | Pr    | A     | SRES  | TRES  | SCOV  | TCOV  | TLIN  |
-| ought | oduct | ccess |       |       |       |       |       |
-| prec  | da    |       |       |       |       |       |       |
-| ursor | taset |       |       |       |       |       |       |
-|       | (Se   |       |       |       |       |       |       |
-|       | nsor- |       |       |       |       |       |       |
-|       | Satel |       |       |       |       |       |       |
-|       | lite) |       |       |       |       |       |       |
-+=======+=======+=======+=======+=======+=======+=======+=======+
-| NDWI  | S2    | GEE   | 20m   | Daily | G     | Since | 1-2   |
-|       | MSI2A |       |       |       | lobal | Mar   | days  |
-|       |       |       |       |       |       | -2017 |       |
-|       | (MSI  |       |       |       |       |       |       |
-|       | -SE2) |       |       |       |       |       |       |
-+-------+-------+-------+-------+-------+-------+-------+-------+
-| GWSA  | G3P   | G3P   | 0.    | Mo    | G     | Since | 1     |
-|       | (GR   | conso | 05deg | nthly | lobal | Mar   | year  |
-|       | ACE-b | rtium |       |       |       | -2002 |       |
-|       | ased) |       |       |       |       |       |       |
-+-------+-------+-------+-------+-------+-------+-------+-------+
++-----------------------+----------------------------------------+---------------------+------------+------------+--------------+----------------------+---------------+
+|                       |                                        |                     |            |            |              |                      |               |
+| Drought precursor     | Product dataset (Sensor-Satellite)     | Access              | SRES       | TRES       | SCOV         | TCOV                 | TLIN          |
++=======================+========================================+=====================+============+============+==============+======================+===============+
+|                       |                                        |                     |            |            |              |                      |               |
+|                       | S2MSI2A                                |                     |            |            |              |                      |               |
+| NDWI                  |                                        | GEE                 | 20m        | Daily      | Global       | Since   Mar-2017     | 1-2   days    |
+|                       | (MSI-SE2)                              |                     |            |            |              |                      |               |
++-----------------------+----------------------------------------+---------------------+------------+------------+--------------+----------------------+---------------+
+|                       |                                        |                     |            |            |              |                      |               |
+| GWSA                  | G3P                                    | G3P   consortium    | 0.05deg    | Monthly    | Global       | Since   Mar-2002     | 1 year        |
+|                       |    (GRACE-based)                       |                     |            |            |              |                      |               |
++-----------------------+----------------------------------------+---------------------+------------+------------+--------------+----------------------+---------------+
 
 WSTOR product 
 ~~~~~~~~~~~~~
@@ -735,102 +699,61 @@ iii. Intra-annual: The 12-month aggregation timescale aims to capture changes th
 
 Table . Teleconnection indices collected by the InfoSequia system.
 
-+----------+----------+----------+----------+----------+----------+
-| *        | *        | **Name** | **       | **A      | **T      |
-| *Climate | *Index** |          | Source** | vailable | imescale |
-| P        |          |          |          | at**     | aggre    |
-| attern** |          |          |          |          | gation** |
-+==========+==========+==========+==========+==========+==========+
-| N        | NAO      | North    | KNMI     | Monthly  | Sub-s    |
-| orthern/ |          | Atlantic | Climate  |          | easonal, |
-| Atlantic |          | Osc      | Explorer |          | Seasonal |
-|          |          | illation |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-| Northern | PNA      | Pacific  | KNMI     | Monthly  | Sub-s    |
-| /Pacific |          | North    | Climate  |          | easonal, |
-|          |          | American | Explorer |          | Seasonal |
-|          |          | Pattern  |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | PDO      | Pacific  | KNMI     | Monthly  | S        |
-|          |          | Decadal  | Climate  |          | easonal- |
-|          |          | Osc      | Explorer |          | to-inter |
-|          |          | illation |          |          | decadal, |
-|          |          | Index    |          |          | Seasonal |
-+----------+----------+----------+----------+----------+----------+
-|          | NOI      | Ext      | PSL NOAA | Monthly  | S        |
-|          |          | ratropic |          |          | easonal, |
-|          |          | al-based |          |          | Intr     |
-|          |          | Northern |          |          | a-annual |
-|          |          | Osc      |          |          |          |
-|          |          | illation |          |          |          |
-|          |          | Index    |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | WP       | West     | KNMI     | Monthly  | Sub-s    |
-|          |          | Pacific  | Climate  |          | easonal, |
-|          |          | Pattern  | Explorer |          | Seasonal |
-+----------+----------+----------+----------+----------+----------+
-|          | RMM2     | Madde    | BoM      | Daily    | Sub-s    |
-|          |          | n-Julian |          |          | easonal, |
-|          |          | Osc      |          |          | Seasonal |
-|          |          | illation |          |          |          |
-|          |          | (MJO)    |          |          |          |
-|          |          | Indices  |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-| Northern | EA       | East     | KNMI     | Monthly  | Sub-s    |
-| He       |          | Atlantic | Climate  |          | easonal, |
-| misphere |          | Pattern  | Explorer |          | Seasonal |
-+----------+----------+----------+----------+----------+----------+
-|          | EA/WR    | East     | KNMI     | Monthly  | Sub-s    |
-|          |          | Atlan    | Climate  |          | easonal, |
-|          |          | tic/West | Explorer |          | Seasonal |
-|          |          | Russia   |          |          |          |
-|          |          | Pattern  |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | SCA      | Scan     | KNMI     | Monthly  | Sub-s    |
-|          |          | dinavian | Climate  |          | easonal, |
-|          |          | Pattern  | Explorer |          | Seasonal |
-+----------+----------+----------+----------+----------+----------+
-|          | EP/NP    | East     | KNMI     | Monthly  | Sub-s    |
-|          |          | Pacific  | Climate  |          | easonal, |
-|          |          | / North  | Explorer |          | Seasonal |
-|          |          | Pacific  |          |          |          |
-|          |          | Pattern  |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | POL      | Polar    | KNMI     | Monthly  | S        |
-|          |          | /Eurasia | Climate  |          | easonal, |
-|          |          | Pattern  | Explorer |          | Intra    |
-|          |          |          |          |          | -annual, |
-|          |          |          |          |          | Annual   |
-+----------+----------+----------+----------+----------+----------+
-|          | AOI      | Artic    | KNMI     | Monthly  | Sub-s    |
-|          |          | Osc      | Climate  |          | easonal, |
-|          |          | illation | Explorer |          | Seasonal |
-+----------+----------+----------+----------+----------+----------+
-| Pacific  | MEI v2   | Mult     | KNMI     | B        | Seasonal |
-|          |          | ivariate | Climate  | imonthly |          |
-|          |          | ENSO     | Explorer |          |          |
-|          |          | Index    |          |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | NINO12   | Niño 1+2 | KNMI     | Monthly  | S        |
-|          |          |          | Climate  |          | easonal, |
-|          |          |          | Explorer |          | Intr     |
-|          |          |          |          |          | a-annual |
-+----------+----------+----------+----------+----------+----------+
-|          | NINO3.4  | Niño 3.4 | KNMI     | Monthly  | S        |
-|          |          |          | Climate  |          | easonal, |
-|          |          |          | Explorer |          | Intr     |
-|          |          |          |          |          | a-annual |
-+----------+----------+----------+----------+----------+----------+
-| Sothern/ | SAM      | Southern | KNMI     | Monthly  | Seasonal |
-| Indian   |          | Annual   | Climate  |          |          |
-|          |          | Mode     | Explorer |          |          |
-+----------+----------+----------+----------+----------+----------+
-|          | DMI      | Dipole   | KNMI     | Monthly  | S        |
-|          |          | Mode     | Climate  |          | easonal, |
-|          |          | Index    | Explorer |          | Intr     |
-|          |          | (former  |          |          | a-annual |
-|          |          | WTIO)    |          |          |          |
-+----------+----------+----------+----------+----------+----------+
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+| Climate   Pattern      | Index      | Name                                                | Source                    | Available   at    | Timescale   aggregation                |
++========================+============+=====================================================+===========================+===================+========================================+
+|                        |            |                                                     |                           |                   |                                        |
+| Northern/Atlantic      | NAO        | North Atlantic Oscillation                          | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | PNA        | Pacific North American Pattern                      | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | PDO        | Pacific Decadal Oscillation Index                   | KNMI Climate Explorer     | Monthly           | Seasonal-to-interdecadal, Seasonal     |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+| Northern/Pacific       | NOI        | Extratropical-based Northern   Oscillation Index    | PSL NOAA                  | Monthly           | Seasonal, Intra-annual                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | WP         | West Pacific Pattern                                | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | RMM2       | Madden-Julian Oscillation (MJO)   Indices           | BoM                       | Daily             | Sub-seasonal, Seasonal                 |
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | EA         | East Atlantic Pattern                               | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | EA/WR      | East Atlantic/West Russia Pattern                   | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | SCA        | Scandinavian Pattern                                | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+| Northern Hemisphere    +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | EP/NP      | East Pacific / North Pacific Pattern                | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | POL        | Polar /Eurasia Pattern                              | KNMI Climate Explorer     | Monthly           | Seasonal, Intra-annual, Annual         |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | AOI        | Artic Oscillation                                   | KNMI Climate Explorer     | Monthly           | Sub-seasonal, Seasonal                 |
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | MEI v2     | Multivariate ENSO Index                             | KNMI Climate Explorer     | Bimonthly         | Seasonal                               |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+| Pacific                | NINO12     | Niño 1+2                                            | KNMI Climate Explorer     | Monthly           | Seasonal, Intra-annual                 |
+|                        +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | NINO3.4    | Niño 3.4                                            | KNMI Climate Explorer     | Monthly           | Seasonal, Intra-annual                 |
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|                        |            |                                                     |                           |                   |                                        |
+|                        | SAM        | Southern Annual Mode                                | KNMI Climate Explorer     | Monthly           | Seasonal                               |
+| Sothern/               +------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
+|    Indian              |            |                                                     |                           |                   |                                        |
+|                        | DMI        | Dipole Mode Index   (former WTIO)                   | KNMI Climate Explorer     | Monthly           | Seasonal, Intra-annual                 |
++------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
 
 |image14|
 
