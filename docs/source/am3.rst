@@ -223,6 +223,7 @@ PPPPP, is the product name (5 uppercase letters, or underscores “_”)
 SRC, is the name of the source or raw dataset (3 uppercase letters). The *[xSRC2]* only applies when two different sources or raw datasets are involved in the generation of the product.
 
 **Box. Examples of filenames**
+
 +-----------------------------------------------------------------------------------------------------------------+
 | *chs.DK.SPI__.CHR.nc*                                                                                           |
 |                                                                                                                 |
