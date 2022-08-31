@@ -474,7 +474,6 @@ c) Copernicus Open Access Hub
 The MOD09GQ product provides daily georectified and atmospherically corrected estimates of 250m surface reflectance in the Red (R) and the Near InfraRed (NIR) bands measured by the Moderate Resolution Imaging Spectroradiometer sensor (MODIS) mounted onboard of the Terra satellite. The dataset offers a long temporal coverage, spanning from Feb-2000 onwards. Each band is linked with a Quality Assurance layer that is used in InfoSequia for a pixel-by-pixel cloud-masking and quality control. Qualified “Top of Canopy” surface reflectances, are then used for computing the NDVI as:
 
 .. math:: NDVI = \frac{\left( NIR - R \right)}{\left( NIR + R \right)}
-    :align: center
 
 
 Daily NDVI are composited and denoised, and the resulting gridded dataset is finally used for computing the VCI and CVIA indices
