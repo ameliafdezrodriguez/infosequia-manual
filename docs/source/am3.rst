@@ -434,7 +434,7 @@ Table . Main properties of the native daily datasets used in InfoSequia VH Lot. 
 | LST                    | (MODIS-Terra)                           |           |         |          |            |                    |             |
 |                        +-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
 |                        |                                         |           |         |          |            |                    |             |
-|                        | SL_2_LST (SLSTR-Sentinel-3)              | COAHc     | 1 km    | Daily    | Global     | Since May-2018     | <3 days     |
+|                        | SL_2_LST (SLSTR-Sentinel-3)              | COAHc     | 1 km    | Daily    | Global     | Since May-2018     | <3 days    |
 +------------------------+-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
 
 - a) NDVI is computed from “Top of Canopy” estimates of Red and NIR surface reflectances-
