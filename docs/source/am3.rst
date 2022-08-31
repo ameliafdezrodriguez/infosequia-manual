@@ -622,13 +622,12 @@ Table 6. Main properties of datasets used in the InfoSequia HYD Lot. NDWI = Norm
 | Drought precursor     | Product dataset (Sensor-Satellite)     | Access              | SRES       | TRES       | SCOV         | TCOV                 | TLIN          |
 +=======================+========================================+=====================+============+============+==============+======================+===============+
 |                       |                                        |                     |            |            |              |                      |               |
-|                       | S2MSI2A                                |                     |            |            |              |                      |               |
-| NDWI                  |                                        | GEE                 | 20m        | Daily      | Global       | Since   Mar-2017     | 1-2   days    |
-|                       | (MSI-SE2)                              |                     |            |            |              |                      |               |
+| NDWI                  | S2MSI2A (MSI-SE2)                      | GEE                 | 20m        | Daily      | Global       | Since   Mar-2017     | 1-2   days    |
+|                       |                                        |                     |            |            |              |                      |               |
 +-----------------------+----------------------------------------+---------------------+------------+------------+--------------+----------------------+---------------+
 |                       |                                        |                     |            |            |              |                      |               |
-| GWSA                  | G3P                                    | G3P   consortium    | 0.05deg    | Monthly    | Global       | Since   Mar-2002     | 1 year        |
-|                       |    (GRACE-based)                       |                     |            |            |              |                      |               |
+| GWSA                  | G3P (GRACE-based)                      | G3P   consortium    | 0.05deg    | Monthly    | Global       | Since   Mar-2002     | 1 year        |
+|                       |                                        |                     |            |            |              |                      |               |
 +-----------------------+----------------------------------------+---------------------+------------+------------+--------------+----------------------+---------------+
 
 WSTOR product 
