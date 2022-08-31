@@ -22,8 +22,9 @@ InfoSequia is characterized by its modularity and robustness, its flexibility an
 
 - triggering of ex-ante cash transfer and voucher programmes (civil defence and response organizations)
 
-< Access to video link in youtube >
-
+.. image:: ./media/YoutubeThumbnail_InfoSequia.jpg
+        :target: https://youtu.be/pHk4cK1TsSQ
+		
 Fit-for purpose 
 ---------------
 
