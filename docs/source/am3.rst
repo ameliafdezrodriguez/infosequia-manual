@@ -85,100 +85,49 @@ Key Performance Indicators
 
 The quality of the seasonal forecasts of InfoSequia is evaluated according its capability to address the needs and technical gaps identified by users. Definition and quantification of these needs are continuously evaluated through specific surveys and/or regular meetings with target user segments, including river basin authorities and humanitarian NGO’s. These needs are translated into several target KPIs and metrics which refer to aspects as geographical scale, forecasting lead time(s), update frequency, latency, reliability and access to the system outcomes (Table 2).
 
-Table . KPIs used for InfoSequia forecast products
+Table 2. KPIs used for InfoSequia forecast products
 
-+----------------------+----------------------+----------------------+
-| **Requirement        | **User req.          | **Description of     |
-| Description**        | indicated**          | criticality**        |
-+----------------------+----------------------+----------------------+
-| **Lead time**        | Flexible: 2-6 months | It is the length of  |
-|                      | ahead                | time between the     |
-|                      |                      | issuance of a        |
-|                      |                      | forecast and the     |
-|                      |                      | occurrence of the    |
-|                      |                      | phenomenon that is   |
-|                      |                      | predicted.           |
-+----------------------+----------------------+----------------------+
-| **Spatial context**  | Sub-basin            | Spatial units with a |
-|                      |                      | large and clear      |
-| (water management)   | River basin          | water supply-demand  |
-|                      |                      | system: sub-basins   |
-|                      |                      | and river basins     |
-+----------------------+----------------------+----------------------+
-| **Spatial context**  | District             | Spatial units with   |
-|                      |                      | homogeneous climate  |
-| (food security)      |                      | forcings and         |
-|                      |                      | cropping systems,    |
-|                      |                      | fitting the area of  |
-|                      |                      | interest of the end  |
-|                      |                      | user                 |
-+----------------------+----------------------+----------------------+
-| **Update frequency** | Monthly              | The update frequency |
-| **(refresh rate)**   |                      | should be in line    |
-|                      |                      | with time scales     |
-|                      |                      | associated with      |
-|                      |                      | relevant             |
-|                      |                      | agro-/hydro-         |
-|                      |                      | climatological       |
-|                      |                      | processes and end    |
-|                      |                      | users’ opportunities |
-|                      |                      | to act               |
-+----------------------+----------------------+----------------------+
-| **Latency            | Max. 3 days          | This is the time     |
-| (timeliness)**       |                      | delay between the    |
-|                      |                      | date at which an     |
-|                      |                      | observation is taken |
-|                      |                      | and the date when    |
-|                      |                      | the alert is         |
-|                      |                      | provided to the      |
-|                      |                      | end-user             |
-+----------------------+----------------------+----------------------+
-| **Reliability**      | Varying from a       | The ability to       |
-|                      | balanced probability | detect hits (true    |
-|                      | for drought          | positives) and       |
-|                      | detection and false  | correct rejections   |
-|                      | alarm (50%-60%), to  | (true negatives). In |
-|                      | a high probability   | this case, accuracy  |
-|                      | of drought detection | is defined as a      |
-|                      | at the expense of    | balance between      |
-|                      | false alarms (>80%). | sensitivity (hit     |
-|                      |                      | rate) and            |
-|                      |                      | specificity (correct |
-|                      |                      | rejection rate).     |
-|                      |                      | This balance should  |
-|                      |                      | be mutable according |
-|                      |                      | to user needs, with  |
-|                      |                      | some applications    |
-|                      |                      | requiring high       |
-|                      |                      | sensitivity (where   |
-|                      |                      | costs of impact are  |
-|                      |                      | high and cost of     |
-|                      |                      | action is low) and   |
-|                      |                      | others high          |
-|                      |                      | specificity (where   |
-|                      |                      | costs of action are  |
-|                      |                      | high).               |
-+----------------------+----------------------+----------------------+
-| **Auxiliary          | - Predictors used    | Additional           |
-| information**        | for forecasting      | information          |
-|                      |                      | delivered with the   |
-|                      | - Metrics of         | InfoSequia(-4CAST)   |
-|                      | forecast uncertainty | information to aid   |
-|                      |                      | end users in its     |
-|                      |                      | interpretation       |
-+----------------------+----------------------+----------------------+
-| **Access to          | Pushed alerts        | System ability to    |
-| InfoSequia           |                      | send out timely,     |
-| information          |                      | pushed methods in    |
-| (alerts)**           |                      | case certain         |
-|                      |                      | threshold values are |
-|                      |                      | exceeded             |
-+----------------------+----------------------+----------------------+
-| **Access to          | - Cloud repository   | Required modalities  |
-| InfoSequia           |                      | for data sharing     |
-| information**        | - Website / portal   | (on-demand access)   |
-|                      | with GUI             |                      |
-+----------------------+----------------------+----------------------+
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Requirement Description                      | User req. indicated                                                                                                                                                           | Description of criticality                                                                                                                                                                                                                                                                                                                                                                                                                                      |
++==============================================+===============================================================================================================================================================================+=================================================================================================================================================================================================================================================================================================================================================================================================================================================================+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Lead time                                    | Flexible: 2-6   months ahead                                                                                                                                                  | It is the length   of time between the issuance of a forecast and the occurrence of the   phenomenon that is predicted.                                                                                                                                                                                                                                                                                                                                         |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Spatial context                              | Sub-basin                                                                                                                                                                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              |                                                                                                                                                                               | Spatial units   with a large and clear water supply-demand system: sub-basins and river   basins                                                                                                                                                                                                                                                                                                                                                                |
+| (water   management)                         | River basin                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Spatial context                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              | District                                                                                                                                                                      | Spatial units   with homogeneous climate forcings and cropping systems, fitting the area of   interest of the end user                                                                                                                                                                                                                                                                                                                                          |
+| (food security)                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Update frequency (refresh   rate)            | Monthly                                                                                                                                                                       | The update   frequency should be in line with time scales associated with relevant   agro-/hydro- climatological processes and end users’ opportunities to act                                                                                                                                                                                                                                                                                                  |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Latency (timeliness)                         | Max. 3 days                                                                                                                                                                   | This is the time   delay between the date at which an observation is taken and the date when the   alert is provided to the end-user                                                                                                                                                                                                                                                                                                                            |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Reliability                                  | Varying from a   balanced probability for drought detection and false alarm (50%-60%), to a high   probability of drought detection at the expense of false alarms (>80%).    | The ability to   detect hits (true positives) and correct rejections (true negatives). In this   case, accuracy is defined as a balance between sensitivity (hit rate) and specificity   (correct rejection rate). This balance should be mutable according to user   needs, with some applications requiring high sensitivity (where costs of   impact are high and cost of action is low) and others high specificity (where   costs of action are high).     |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              | - Predictors used   for forecasting                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Auxiliary information                        |                                                                                                                                                                               | Additional   information delivered with the InfoSequia(-4CAST) information to aid end   users in its interpretation                                                                                                                                                                                                                                                                                                                                             |
+|                                              | - Metrics of   forecast uncertainty                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Access to InfoSequia information (alerts)    | Pushed alerts                                                                                                                                                                 | System ability to   send out timely, pushed methods in case certain threshold values are exceeded                                                                                                                                                                                                                                                                                                                                                               |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+|                                              |                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|                                              | - Cloud   repository                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Access to InfoSequia information             |                                                                                                                                                                               | Required   modalities for data sharing (on-demand access)                                                                                                                                                                                                                                                                                                                                                                                                       |
+|                                              | - Website /   portal with GUI                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+Use Unicode symbols for table borders
+Use reStructuredText syntax
 
 SYSTEM ARCHITECTURE 
 ===================
@@ -287,7 +236,7 @@ Native sources of input data
 
 Raw datasets of PRCP and PET are used by InfoSequia for the generation of PPERC, SPI and SPEI indices. These datasets and main properties are listed in Table 3 and briefly overviewed below.
 
-Table . Main properties of datasets used in InfoSequia MET Lot. SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness. All datasets are monthly updated.
+Table 3. Main properties of datasets used in InfoSequia MET Lot. SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness. All datasets are monthly updated.
 
 +---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
 |               |                      |           |                        |         |                                |                              |                  |
@@ -301,7 +250,7 @@ Table . Main properties of datasets used in InfoSequia MET Lot. SRES = spatial r
 +---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
 |               |                      |           |                        |         |                                |                              |                  |
 | Terra         | pet                  | GEE       | 1/24th deg.            | MM      | Global                         | From Jan-1958 to Dec-2020    | -                |
-|    Climate    |                      |           |                        |         |                                |                              |                  |
+| Climate       |                      |           |                        |         |                                |                              |                  |
 |               |                      |           | (~4.5 km)              |         |                                |                              |                  |
 +---------------+----------------------+-----------+------------------------+---------+--------------------------------+------------------------------+------------------+
 
@@ -346,7 +295,7 @@ Algorithm description
 
 The *Standardized Precipitation Index* (SPI), introduced originally by McKee et al. (1993), measures the precipitation anomalies at a given location and timestep, based on the comparison between the observed accumulated precipitation in a desired timescale, and the long-term historical (reference or climatology) rainfall record for that period and timescale. Previously, the historical record is fitted to a two-parameter “gamma” probability distribution (Stagge et al., 2015), which is then transformed into a normal distribution such that the mean SPI value for that location and period is zero. SPI values range between -3.1 and 3.1 values, being values below 0 an indication of dryness. SPI values categorized into several severity classes based on thresholds. The SPI has been computed in InfoSequia at a dekad-based and monthly temporal resolution, and for 1, 3, 6 and 12-months aggregation timescales. Similar to PPERC, four severity categories have been defined according to standard values (Table 4). SPI is the most used meteorological drought index worldwide, and its computation has been highly recommended by the WMO in order to monitor drought conditions (Hayes, 2011).
 
-   **Table** **4. Severity categories and thresholds used in InfoSequia for each drought index.ht index.**
+Table 4. Severity categories and thresholds used in InfoSequia for each drought index.ht index.
 
 =================== ========= ============
 Category            PPERC     SPI / SPEI
@@ -410,9 +359,9 @@ Gridded datasets of NDVI are computed from Red and NIR surface reflectance value
 Native sources of input data 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, and CVIA indices. These datasets and main properties are listed in Table 3 and briefly overviewed below.
+Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, and CVIA indices. These datasets and main properties are listed in Table 5 and briefly overviewed below.
 
-Table . Main properties of the native daily datasets used in InfoSequia VH Lot. NDVI = Normalized Difference Vegetation Index, LST = Land Surface Temperature, SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness.
+Table 5. Main properties of the native daily datasets used in InfoSequia VH Lot. NDVI = Normalized Difference Vegetation Index, LST = Land Surface Temperature, SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness.
 
 +------------------------+-----------------------------------------+-----------+---------+----------+------------+--------------------+-------------+
 |                        |                                         |           |         |          |            |                    |             |
@@ -488,9 +437,7 @@ Figure 7. Logic workflow for generation of sharpened LST products.
 NDVI denoising 
 ^^^^^^^^^^^^^^
 
-Characterization of vegetation phenology and dynamics by using pixel-based NDVI timeseries is usually hindered by noise arising from unfavorable atmospheric conditions, and sun-sensor-surface viewing geometries which usually creates spurious drops in NDVI. Several strategies have been described in literature to remove spikes, reduce noise, and smooth timeseries of NDVI [2]_. InfoSequia system adopts a 3-step denoising approach which consists of an outlier removal process, a double-median smoothing, and low-pass Savitzky-Golay filtering. The general procedure aims to simulate the adaptive Savitzky-
-
-Golay filtering process implemented in TIMESAT, and is applied over the timeseries of raw NDVI generated from the MODIS and SE3 datasets.
+Characterization of vegetation phenology and dynamics by using pixel-based NDVI timeseries is usually hindered by noise arising from unfavorable atmospheric conditions, and sun-sensor-surface viewing geometries which usually creates spurious drops in NDVI. Several strategies have been described in literature to remove spikes, reduce noise, and smooth timeseries of NDVI. InfoSequia system adopts a 3-step denoising approach which consists of an outlier removal process, a double-median smoothing, and low-pass Savitzky-Golay filtering. The general procedure aims to simulate the adaptive Savitzky-Golay filtering process implemented in TIMESAT, and is applied over the timeseries of raw NDVI generated from the MODIS and SE3 datasets.
 
 The first step of the denoising technique consists in the removal of outliers, defined here as those observed NDVI values that deviates, by a certain cutoff threshold, from the mean value observed in an rolling end-tailed window which size is set up by the user. The cutoff threshold is defined as the standard deviation of NDVI in an end-tailed rolling time window, scaled by a constant factor (*cutoff_scaling factor*). The size of the rolling time window (*window_size*) is a fix value which cover a certain number of dekad NDVI values. When an outlier is detected, the algorithm replaces the original value by a nodata value.
 
@@ -498,7 +445,7 @@ Second step consists of a double-median smoothing process in which new NDVI valu
 
 Finally, in a third step, a Savitzky-Golay filtering is applied over the upper-smoothed timeseries. The principle of this method is to replace each data value by a combination of adjacent values in a moving window using a least-squares polynomial fit of a particular degree (*polynomial_degree*).
 
-In total, three input parameters are required to run the InfoSequia denoising algorithm: a) the *cutoff_scaling factor*, b) the time *window_size*, and c) the *polynomial_degree* used during the Savitzky-Golay filtering. All these parameters have been fixed at 1.5, 5, and 3, respectively. The impact of the denoising procedure applied over a NDVI timeseries for a particular pixel is illustrated in Figure 5
+In total, three input parameters are required to run the InfoSequia denoising algorithm: a) the *cutoff_scaling factor*, b) the time *window_size*, and c) the *polynomial_degree* used during the Savitzky-Golay filtering. All these parameters have been fixed at 1.5, 5, and 3, respectively. The impact of the denoising procedure applied over a NDVI timeseries for a particular pixel is illustrated in Figure 8
 
 |image11|
 
@@ -613,7 +560,7 @@ In absence of ground-based streamflow observations, InfoSequia will ingest river
 Native source of input data
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, and CVIA indices. These datasets and main properties are listed in Table 3 and briefly overviewed below.
+Raw datasets of NDVI and LST are used by InfoSequia for the generation of VH, and CVIA indices. These datasets and main properties are listed in Table 6 and briefly overviewed below.
 
 Table 6. Main properties of datasets used in the InfoSequia HYD Lot. NDWI = Normalized Difference Water Index, SRES = spatial resolution; TRES = temporal resolution; SCOV = spatial coverage; TCOV = temporal coverage; TLIN = timeliness;
 
@@ -688,7 +635,7 @@ Lot content
 
 This lot includes a comprehensive suite of atmospheric oscillation indices related with the main teleconnection patterns observed globally. Teleconnection pattern is a term used to refer to a recurring and persistent, large-scale pattern of pressure and circulation anomalies that affect vast geographical areas. Some of these patterns often last for weeks to months, while others can also be prominent for several years, thus reflecting an important part of both interannual to interdecadal variability of the atmospheric circulation.
 
-InfoSequia operationally collects a total of 18 teleconnection indices (Table 7). Most of these indices are natively generated at the monthly scale and are primarily retrieved from the `KNMI`_ Climate Explorer tool, or when lacking from other national or international prediction agencies (e.g. `NOAA’s CPC`_). Given that the listed indices of atmospheric oscillations can switch between two prevailing patterns (phase of the oscillation) at different frequencies (e.g., seasonal, intra-annual), mean values at moving temporal windows of 3, 6 and 12 months are computed (Figure 9).
+InfoSequia operationally collects a total of 18 teleconnection indices (Table 7). Most of these indices are natively generated at the monthly scale and are primarily retrieved from the `KNMI`_ Climate Explorer tool, or when lacking from other national or international prediction agencies (e.g. `NOAA’s CPC`_). Given that the listed indices of atmospheric oscillations can switch between two prevailing patterns (phase of the oscillation) at different frequencies (e.g., seasonal, intra-annual), mean values at moving temporal windows of 3, 6 and 12 months are computed (Figure 11).
 
 i.   Sub-seasonal. The 3-month aggregation timescale aims to capture patterns that persist from days to months, which are known to play an important role in determining whether a particular season will be warm or cold, wet or dry.
 
@@ -696,7 +643,7 @@ ii.  Seasonal. The 6-month aggregation timescale aims to incorporate patterns of
 
 iii. Intra-annual: The 12-month aggregation timescale aims to capture changes that persist from several months to one year as intra-annual precipitation can be influenced by development and interactions of the patterns.
 
-Table . Teleconnection indices collected by the InfoSequia system.
+Table 7. Teleconnection indices collected by the InfoSequia system.
 
 +------------------------+------------+-----------------------------------------------------+---------------------------+-------------------+----------------------------------------+
 |                        |            |                                                     |                           |                   |                                        |
@@ -758,10 +705,10 @@ Table . Teleconnection indices collected by the InfoSequia system.
 
 Figure 11. Logic workflow for the generation of climate and AO indices.
 
-INFOSEQUIA-FORECASTING
+INFOSEQUIA-4CAST
 ======================
 
-(wait for the most updated version)
+(under development)
 
 Naming convention and Metadata
 ------------------------------
@@ -806,7 +753,7 @@ hc.performance_L\ *#*\ \_\ *<textstring>*\ \_\ *<prednd>*.\ *<prednd.stat>*\ \_l
 Pre-processing and preparation of input data
 --------------------------------------------
 
-The 4CAST processor of InfoSequia ingests datasets from the InfoSequia-MONITOR (predictors) and auxiliary or external sources (predictors). The ing4CAST algorithm is “heterogeneous data ingestion pattern” algorithm which enables the preparation of the data inputs according to the format requirements required by the 4CAST processor (Figure 2). The algorithm extracts and combines absolute values of a predictand metric(s) (observations or indicators of impact in absolute ) from an external file or dataset, and all the suite of predictors generated by the InfoSequia-MONITOR component.
+The 4CAST processor of InfoSequia ingests datasets from the InfoSequia-MONITOR (predictors) and auxiliary or external sources (predictors). The ing4CAST algorithm is “heterogeneous data ingestion pattern” algorithm which enables the preparation of the data inputs according to the format requirements required by the 4CAST processor (Figure 12). The algorithm extracts and combines absolute values of a predictand metric(s) (observations or indicators of impact in absolute ) from an external file or dataset, and all the suite of predictors generated by the InfoSequia-MONITOR component.
 
 |image15|
 
