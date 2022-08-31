@@ -1105,5 +1105,6 @@ Quality Assurance and Validation
    :width: 4.72565in
    :height: 3.96319in
 .. |image18| image:: ./media/image18.png
-   :width: 2.23084in
-   :height: 1.35075in
+   :width: 4.46in
+   :height: 2.70in
+   :align:center
